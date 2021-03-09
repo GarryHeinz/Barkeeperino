@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+#ueberschrift {
+  font-family: "Roboto";
+  font-size: 5rem;
+  text-align: center;
+  padding: 5px 0 5rem;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url(../Images/bar.jpg) no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.background .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem;
+  width: 100vw;
+  height: 45vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.wrapper .innerWrapper {
+  padding: 2rem;
+  height: 100%;
+  width: 25%;
+}
+
+.wrapper .innerWrapper:nth-child(2) {
+  width: 30vh;
+  height: 30vh;
+  max-width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper #zutaten {
+  background-color: rgba(60, 60, 60, 0.45);
+}
+
+.wrapper #foto {
+  border-radius: 50%;
+}
+
+.wrapper #zubereitung {
+  background-color: rgba(60, 60, 60, 0.45);
+}
+
+.wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 15vh;
+  width: 100vw;
+}
+
+.wrapper2 .innerWrapper {
+  width: 30%;
+  height: 100%;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.innerWrapper {
+  border-radius: 1rem;
+}
+
+.unterschriften {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: large;
+}
+
+@media (max-width: 500px) {
+  #ueberschrift {
+    font-size: 3rem;
+  }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper .innerWrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .wrapper .innerWrapper:nth-child(2) {
+    width: 30vw;
+    height: 30vh;
+    max-width: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

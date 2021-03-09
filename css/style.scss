@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+
+$bgColor : rgba(60,60,60,0.45);
+
+
+*,
+*::before,
+*::after {
+  color : white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+
+#ueberschrift{
+  font-family: "Roboto";
+  font-size: 5rem;
+  text-align: center;
+  padding: 5px 0 5rem;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url(../Images/bar.jpg) no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  .gradient {
+    position :absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
+  }
+}
+
+.wrapper{
+  display: flex;
+  padding : 0 1rem;
+  width: 100vw;
+  height: 45vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  .innerWrapper{
+    padding: 2rem;
+    height: 100%;
+    width: 25%;
+  }
+  .innerWrapper:nth-child(2){
+    width: 30vh;
+    height: 30vh;
+    max-width: 50vh;
+    object-fit: cover;
+  }
+  #zutaten{
+    background-color: $bgColor;
+  }
+  #foto{
+    border-radius: 50%;
+    
+  }
+  #zubereitung{
+    background-color: $bgColor;
+  }
+}
+
+.wrapper2{
+  display: flex;
+  justify-content: space-evenly;
+  height: 15vh;
+  width: 100vw;
+  .innerWrapper{
+    width: 30%;
+    height: 100%;
+        font-size: 5rem;
+    text-align: center;
+  }
+
+}
+.innerWrapper{
+  border-radius: 1rem;
+}
+.unterschriften{
+  font-size: 1.5rem;
+}
+
+span{
+  font-size: large;
+}
+
+@media (max-width : 500px){
+
+    #ueberschrift{
+      font-size: 3rem;
+    }
+
+    .wrapper{
+      flex-direction: column;
+      align-items: center;
+      .innerWrapper{
+        width: 100%;
+        margin-bottom: 1rem;
+        
+      }
+      .innerWrapper:nth-child(2){
+        width: 30vw;
+        height: 30vh;
+        max-width: 50vh;
+      }
+    }
+
+    
+
+}
